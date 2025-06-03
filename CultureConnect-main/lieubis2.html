@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CultureConnect - Lieu</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="navbar.js"></script>
+        <script src="recherche.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="lieubis.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <header>
+            <!-- à changer : quand on se connecte changer connexion par nom prenom et go sur la page profil-->
+              <!--<div window.onload="script.js/initApp()" id=navigation>-->
+                  <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="logo"><img alt="logo revenir à la page d'accueil" src="logo.png" height="71" width="71"></a>
+                    <a href="whoweare.html" >Qui sommes-Nous?</a>
+                    <a href="access.html">Un mot sur l'accessibilité</a>
+                    <a href="recherche_lieu.html">Je veux visiter</a>
+                    <a href="connexion.html" class="nav-connexion">Connexion</a> <!--si connecter <a href="users.html" class="nav-connexion">nom+prenom</a> -->
+                    <a href="javascript:void(0);" class="icon" onclick="navbar.js/navbar()">
+                  <i class="fa fa-bars"></i>
+                  </a>
+              </div>
+        </header>
+    <body>
+        <br>
+        <div class="header-bis">
+            <h1 id="nom_etablissement" ></h1>
+        </div>
+        <div class="imageLieu">
+            <img id="img_lieu" class="img-fluid rounded" src="" alt="">
+        </div>
+            <br>
+            <h2>Description</h2>
+            <br>
+            <p id="description">La Tour Eiffel est une tour en treillis de fer forgé sur le Champ de Mars à Paris, en France. Elle porte le nom de l'ingénieur Gustave Eiffel, dont la société a conçu et construit la tour.</p>
+            <p id="description2">La Tour Eiffel est une tour en treillis de fer forgé sur le Champ de Mars à Paris, en France. Elle porte le nom de l'ingénieur Gustave Eiffel, dont la société a conçu et construit la tour.</p>
+            <p id="description3">La Tour Eiffel est une tour en treillis de fer forgé sur le Champ de Mars à Paris, en France. Elle porte le nom de l'ingénieur Gustave Eiffel, dont la société a conçu et construit la tour.</p>
+            <hr class="featurette-divider">
+
+            <h2>Accessibilité</h2>
+
+    <div class="row text-center mt-4">
+        <div class="col">
+            <img src="blind_83980.png" alt="Icône du handicap visuel" height="90" width="90">
+                <div class="mt-2">
+                    <span id="handicap_visuel" class="badge badge-success">Accessible</span>
+                </div>
+        </div>
+        <div class="col">
+            <img src="disabilitysymbol_89162.png" alt="Icône du handicap moteur" height="90" width="90">
+                <div class="mt-2">
+                    <span id="handicap_moteur" class="badge badge-danger">Non accessible</span>
+                </div>
+        </div>
+        <div class="col">
+            <img src="deaf_icon_144383.png" alt="Icône du handicap auditif" height="90" width="90">
+                <div class="mt-2">
+                    <span id="handicap_auditif" class="badge badge-success">Accessible</span>
+                </div>
+         </div>
+        </div>
+        <hr class="featurette-divider">
+            <h2>Comment s'y rendre ?</h2>
+
+            <p id="adresse" class="adresse">Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France</p>
+            <p id="code_postal" class="adresse">75007 </p>
+            <p id="ville" class="adresse">Paris</p>
+
+            <hr class="featurette-divider">
+
+            <h2>Site Web</h2>
+            <p id="site_web"><a href="https://www.toureiffel.paris/fr">https://www.toureiffel.paris/fr</a></p>
+
+            
+        <div class="centrerbouton">
+            <button class="openBtn"><a href="interesse.html" id="interesse" class="textbouton" value="nom_etablissement">Je suis intéressé</a></button>
+        </div>  
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="lieubis.js" type="module"></script>
+</body>
+</html>
