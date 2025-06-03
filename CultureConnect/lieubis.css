@@ -1,0 +1,44 @@
+body{
+    margin-bottom: 3rem;
+}
+.img-fluid {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  ;
+}
+
+        
+h2 {
+    margin-top: 0;
+    /* font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2; */
+    color: #31ab4c;
+    text-decoration: underline #31ab4c;
+    text-transform: uppercase;
+}
+
+.imageLieu{
+    margin-top: 0;
+}
+
+.textbouton{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    text-align: justify;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.featurette-divider {
+    margin: 2rem 0; 
+
+  }
+
+.adresse{
+    margin-bottom: 0;
+}
