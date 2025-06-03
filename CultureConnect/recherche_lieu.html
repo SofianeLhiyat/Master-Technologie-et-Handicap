@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="navbar.js"></script>
+    <script src="recherche.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+  <body>
+    <header>
+        <!-- à changer : quand on se connecte changer connexion par nom prenom et go sur la page profil-->
+          <!--<div window.onload="script.js/initApp()" id=navigation>-->
+              <div class="topnav" id="myTopnav">
+                <a href="index.html" class="logo"><img alt="logo revenir à la page d'accueil" src="logo.png" height="71" width="71"></a>
+                <a href="whoweare.html" >Qui sommes-Nous?</a>
+                <a href="access.html">Un mot sur l'accessibilité</a>
+                <a href="recherche_lieu.html">Je veux visiter</a>
+                <a href="connexion.html" class="nav-connexion">Connexion</a> <!--si connecter <a href="users.html" class="nav-connexion">nom+prenom</a> -->
+                <a href="javascript:void(0);" class="icon" onclick="navbar.js/navbar()">
+              <i class="fa fa-bars"></i>
+              </a>
+          </div>
+    </header>             
+            <div class="header-bis">
+              <h1>Trouvez un nouveau lieu à visiter!</h1>
+            </div>
+            <p class="p-header">Grâce à nos filtres trouvez le lieu qui vous intéresse. Choississez parmi un large choix de musées, de monunents, de chateaux,... Indiquez que vous êtes intéressé et c'est parti !<br> 
+              Si vous ne savez pas quel lieu visiter, rechercher directement un groupe pour votre visite, en regardant la page <a href="recherchegroupe.html">"Recherchez un groupe de visite".</a></p>
+            
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span>
+            <div class="overlay-content">
+                <form>
+                    <h4>Où voulez vous allez?</h4><br>
+                    
+                    <input type="text" id="code_postal" name="code_postal" placeholder="Code postal" ><br><br>
+                    
+                    
+                    <input type="text" id="ville" name="ville" placeholder="Ville"><br><br>
+                    <h4>Vous avez un handicap?</h4><br>
+                    
+                    <input type="checkbox" id="handicap_auditif" value="handicap_auditif" class="preferenceCheckbox">Handicap auditif</input><br>
+                    <input type="checkbox" id="handicap_visuel" value="handicap_visuel"  class="preferenceCheckbox">Handicap visuel</input><br>
+                    <input type="checkbox" id="handicap_moteur" value="handicap_moteur" class="preferenceCheckbox">Handicap moteur</input><br><br>
+                    
+                    <h4>Vous préférez visiter ...</h4><br>
+                    <input type="checkbox" id="musee" class="preferenceCheckbox">Un musée</input><br>
+                    <input type="checkbox" id="exposition" class="preferenceCheckbox">Une exposition</input><br>
+                    <input type="checkbox" id="monument" class="preferenceCheckbox">Un monument</input><br>
+                    <input type="checkbox" id="chateaux" class="preferenceCheckbox">Un chateaux</input><br>
+                    <input type="submit" value="Appliquer les modifications" id="search">
+                    <input type="reset" value="Réinitialiser les paramètres" id="clear">
+                </form>
+                
+            </div>
+          </div>
+          <div class="centrerbouton">
+          <button class="openBtn" onclick="openSearch()">Filtres</button>
+        </div>
+    <main>
+      <div class="album py-5">
+        <div class="container">
+          <div class="row" id="row">
+
+          </div>
+        </div>
+      </div>  
+    </main>
+    <ul id="liste_lieux">
+
+    </ul>
+    </form>
+    <script src="recherche_sitebis.js" type="module"></script>
+    <script src="affiche_site.js" type="module"></script>
+
+</body>
+</html> 
